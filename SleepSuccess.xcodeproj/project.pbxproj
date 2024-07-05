@@ -61,11 +61,8 @@
 		AF5905CE2C372C47008D3835 /* SleepSuccess */ = {
 			isa = PBXGroup;
 			children = (
+				AF97F35C2C388A8000B2A98B /* App */,
 				AF97F3562C387D1A00B2A98B /* ProgressiveAlarm */,
-				AF5905CF2C372C47008D3835 /* SleepSuccessApp.swift */,
-				AF5905E42C3741F3008D3835 /* SplashScreen.swift */,
-				AF97F35A2C387F2E00B2A98B /* appDetailGetter.swift */,
-				AF5905E62C37421F008D3835 /* ContainerView.swift */,
 				AF5905D32C372C49008D3835 /* Assets.xcassets */,
 				AF5905D52C372C49008D3835 /* Preview Content */,
 			);
@@ -88,6 +85,17 @@
 				AF97F3552C387D1A00B2A98B /* SetAlarmsView.swift */,
 			);
 			path = ProgressiveAlarm;
+			sourceTree = "<group>";
+		};
+		AF97F35C2C388A8000B2A98B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AF5905CF2C372C47008D3835 /* SleepSuccessApp.swift */,
+				AF5905E42C3741F3008D3835 /* SplashScreen.swift */,
+				AF97F35A2C387F2E00B2A98B /* appDetailGetter.swift */,
+				AF5905E62C37421F008D3835 /* ContainerView.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
