@@ -8,22 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		AF5905D02C372C47008D3835 /* SleepSuccessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5905CF2C372C47008D3835 /* SleepSuccessApp.swift */; };
-		AF5905D22C372C47008D3835 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5905D12C372C47008D3835 /* ContentView.swift */; };
 		AF5905D42C372C49008D3835 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF5905D32C372C49008D3835 /* Assets.xcassets */; };
 		AF5905D72C372C49008D3835 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF5905D62C372C49008D3835 /* Preview Assets.xcassets */; };
-		AF5905DF2C372D03008D3835 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = AF5905DE2C372D03008D3835 /* Lottie */; };
 		AF5905E52C3741F3008D3835 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5905E42C3741F3008D3835 /* SplashScreen.swift */; };
 		AF5905E72C37421F008D3835 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5905E62C37421F008D3835 /* ContainerView.swift */; };
+		AF97F3572C387D1A00B2A98B /* AlarmData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF97F3532C387D1A00B2A98B /* AlarmData.swift */; };
+		AF97F3582C387D1A00B2A98B /* AlarmSetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF97F3542C387D1A00B2A98B /* AlarmSetterView.swift */; };
+		AF97F3592C387D1A00B2A98B /* SetAlarmsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF97F3552C387D1A00B2A98B /* SetAlarmsView.swift */; };
+		AF97F35B2C387F2E00B2A98B /* appDetailGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF97F35A2C387F2E00B2A98B /* appDetailGetter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AF5905CC2C372C47008D3835 /* SleepSuccess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepSuccess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF5905CF2C372C47008D3835 /* SleepSuccessApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepSuccessApp.swift; sourceTree = "<group>"; };
-		AF5905D12C372C47008D3835 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AF5905D32C372C49008D3835 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF5905D62C372C49008D3835 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AF5905E42C3741F3008D3835 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		AF5905E62C37421F008D3835 /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
+		AF97F3532C387D1A00B2A98B /* AlarmData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmData.swift; sourceTree = "<group>"; };
+		AF97F3542C387D1A00B2A98B /* AlarmSetterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmSetterView.swift; sourceTree = "<group>"; };
+		AF97F3552C387D1A00B2A98B /* SetAlarmsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetAlarmsView.swift; sourceTree = "<group>"; };
+		AF97F35A2C387F2E00B2A98B /* appDetailGetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appDetailGetter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,7 +36,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF5905DF2C372D03008D3835 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,10 +61,11 @@
 		AF5905CE2C372C47008D3835 /* SleepSuccess */ = {
 			isa = PBXGroup;
 			children = (
+				AF97F3562C387D1A00B2A98B /* ProgressiveAlarm */,
 				AF5905CF2C372C47008D3835 /* SleepSuccessApp.swift */,
 				AF5905E42C3741F3008D3835 /* SplashScreen.swift */,
+				AF97F35A2C387F2E00B2A98B /* appDetailGetter.swift */,
 				AF5905E62C37421F008D3835 /* ContainerView.swift */,
-				AF5905D12C372C47008D3835 /* ContentView.swift */,
 				AF5905D32C372C49008D3835 /* Assets.xcassets */,
 				AF5905D52C372C49008D3835 /* Preview Content */,
 			);
@@ -73,6 +78,16 @@
 				AF5905D62C372C49008D3835 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AF97F3562C387D1A00B2A98B /* ProgressiveAlarm */ = {
+			isa = PBXGroup;
+			children = (
+				AF97F3532C387D1A00B2A98B /* AlarmData.swift */,
+				AF97F3542C387D1A00B2A98B /* AlarmSetterView.swift */,
+				AF97F3552C387D1A00B2A98B /* SetAlarmsView.swift */,
+			);
+			path = ProgressiveAlarm;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -92,7 +107,6 @@
 			);
 			name = SleepSuccess;
 			packageProductDependencies = (
-				AF5905DE2C372D03008D3835 /* Lottie */,
 			);
 			productName = SleepSuccess;
 			productReference = AF5905CC2C372C47008D3835 /* SleepSuccess.app */;
@@ -151,10 +165,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF97F3572C387D1A00B2A98B /* AlarmData.swift in Sources */,
+				AF97F35B2C387F2E00B2A98B /* appDetailGetter.swift in Sources */,
 				AF5905E72C37421F008D3835 /* ContainerView.swift in Sources */,
 				AF5905E52C3741F3008D3835 /* SplashScreen.swift in Sources */,
-				AF5905D22C372C47008D3835 /* ContentView.swift in Sources */,
 				AF5905D02C372C47008D3835 /* SleepSuccessApp.swift in Sources */,
+				AF97F3582C387D1A00B2A98B /* AlarmSetterView.swift in Sources */,
+				AF97F3592C387D1A00B2A98B /* SetAlarmsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,7 +317,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.joaquimenezes.SleepSuccess;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -329,7 +346,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.joaquimenezes.SleepSuccess;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -371,14 +388,6 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		AF5905DE2C372D03008D3835 /* Lottie */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AF5905DD2C372D03008D3835 /* XCRemoteSwiftPackageReference "lottie-ios" */;
-			productName = Lottie;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AF5905C42C372C47008D3835 /* Project object */;
 }

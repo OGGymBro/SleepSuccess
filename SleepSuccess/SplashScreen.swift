@@ -20,10 +20,12 @@ struct SplashScreen: View {
         VStack(alignment: .center){
             ZStack {
                 VStack {
+                    Spacer()
+                    
                     Text("Welcome to \nSleepSuccess")
                         .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                         .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                        .foregroundStyle(.green)
+                        .foregroundStyle(.primary)
                     .multilineTextAlignment(.center)
                     
                     Image(systemName: "clock.badge.checkmark")
@@ -33,6 +35,20 @@ struct SplashScreen: View {
                         .frame(width: 200, height: 200)
                         .foregroundColor(.green)
                         .padding(.leading,30)
+                    
+                    Spacer()
+                    
+                    HStack{
+                        
+                        Text("App Version:")
+                            .font(.subheadline)
+                            .foregroundStyle(.gray)
+                        Text("\(appVersion) (\(buildNumber))")
+                            .font(.subheadline)
+                            .foregroundColor(.gray)
+                            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                        
+                    }
                 }
                 
                 
@@ -42,7 +58,7 @@ struct SplashScreen: View {
         }
         .onAppear {
             withAnimation(.easeInOut(duration: 1.5)){
-                scale = CGSize(width: 1, height: 1) 
+                scale = CGSize(width: 1, height: 1)
             }
             
             DispatchQueue.main.asyncAfter(deadline: .now() + 2.5,
